@@ -1,4 +1,14 @@
-#include <bits/stdc++.h>
+#include <iostream>
+#include <algorithm>
+#include <thread>
+#include <vector>
+#include <mutex> 
+#include <filesystem>
+#include <numeric>
+#include <time.h>
+#include <string>
+#include <fstream>
+
 using namespace std;
 #define all(x) begin(x), end(x)
 typedef long long ll;
