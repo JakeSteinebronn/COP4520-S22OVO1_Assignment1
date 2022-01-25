@@ -1,11 +1,12 @@
+# COP4520-S22OVO1_Assignment1
 This program was written in c++17.
 To compile and run:
 g++ -std=c++17 -O3 -pthread assignment1.cpp && ./a.out
 
 I am running 8 threads, each thread is responsible for looping up to sqrt(bound) (i.e. 1e4) 
 and using the miller-rabin test to check if each number the thread is responsible for is prime.
-If it is, then it will loop over all its multiples and turn them off in an array called isprime. 
-Afterward, the main thread will simply collect the prime numbers from this isprime array. 
+If it is, then it will loop over all its multiples and turn them on in an array called isComp. 
+Afterward, the main thread will simply collect the prime numbers from this array. 
 This will be correct (as long as the primality check is correct) because to determine if a number x 
 is prime, you simply have to show that every prime number less than sqrt(x) does not divide x. 
 I verified the correctness of this by checking the prime-count via third-party (wolfram alpha).
